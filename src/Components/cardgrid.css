@@ -1,0 +1,56 @@
+.card-grid {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 2fr)); /* Ajustando para acomodar cards de tamanho fixo */
+    gap: 10px; /* Ajustando gap entre os cards */
+    padding: 16px;
+    background-image: linear-gradient(to right, red, rgb(228, 228, 215));
+}
+
+.card {
+    width: 460px; /* Definindo largura fixa */
+    height: 250px; /* Definindo altura fixa */
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    overflow: hidden; /* Adicionando overflow hidden */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do card */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Zoom leve para dar um efeito visual agradável */
+}
+
+.card-imagem {
+    width: 20px; /* Definindo largura fixa para a imagem */
+    height: auto;
+    margin: 15px;
+}
+
+.card-corpo {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Para ocupar o espaço restante ao lado da imagem */
+    /* overflow: hidden; Adicionando overflow hidden */
+}
+
+.card-titulo, .card-preco, .card-descricao {
+    margin: 10px; /* Removendo margens padrão para evitar overflow */
+    padding: 0;
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar o limite */
+}
+
+.card-grid .card:hover {
+    transform: scale(1.15); /* Zoom de 15% */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

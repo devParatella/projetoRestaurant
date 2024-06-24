@@ -1,0 +1,41 @@
+.cards {
+    display: flex;
+    
+    width: 350px; /* Definindo largura fixa */
+    height: 460px; /* Definindo altura fixa */
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do cards */
+}
+
+.cards:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Zoom leve para dar um efeito visual agradável */
+}
+
+.cards-imagem {
+    width: 80px; /* Definindo largura fixa para a imagem */
+    height: auto;
+    margin-right: 15px;
+}
+
+.cards-corpo {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Para ocupar o espaço restante ao lado da imagem */
+    overflow: hidden; /* Adicionando overflow hidden */
+}
+
+.cards-titulo, .cards-preco, .cards-descricao {
+    margin: 0; /* Removendo margens padrão para evitar overflow */
+    padding: 0;
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar o limite */
+}
