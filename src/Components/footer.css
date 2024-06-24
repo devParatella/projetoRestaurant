@@ -1,0 +1,53 @@
+/* footer.css */
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    margin: 0 10px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#rights {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}

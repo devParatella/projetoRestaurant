@@ -10,8 +10,8 @@ export default function Footer() {
             <div className="card">
                 <br />
                 <div className="card-body">
-                    <h3 className="card-title">Sobre Nós</h3>
-                    <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus earum non molestias suscipit</p>
+                    <h3 className="card-title">Visite-nos em sua rede social favorita</h3>
+                    <p className="text">Venha nos conhecer</p>
                     <a href="/"><img src={fb} alt="social media" /></a>
                     <a href="/"><img src={twi} alt="social media" /></a>
                     <a href="/"><img src={ins} alt="social media" /></a>

@@ -8,8 +8,8 @@
 }
 
 .card {
-    width: 460px; /* Definindo largura fixa */
-    height: 250px; /* Definindo altura fixa */
+    width: 460px;
+    height: 270px;
     padding: 15px;
     margin: 15px;
     border: 1px solid black;
@@ -20,37 +20,60 @@
     justify-content: center;
     flex-direction: row;
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-    overflow: hidden; /* Adicionando overflow hidden */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total do card */
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Zoom leve para dar um efeito visual agradável */
 }
 
 .card-imagem {
-    width: 20px; /* Definindo largura fixa para a imagem */
+    width: 20px;
     height: auto;
-    margin: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card-imagem:hover {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.15); /* Zoom de 15% */
 }
 
 .card-corpo {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Para ocupar o espaço restante ao lado da imagem */
-    /* overflow: hidden; Adicionando overflow hidden */
+    flex: 1;
+    
 }
 
-.card-titulo, .card-preco, .card-descricao {
-    margin: 10px; /* Removendo margens padrão para evitar overflow */
+.card-titulo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px;
     padding: 0;
-    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
-    white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassar o limite */
+    white-space: nowrap;
+    font-size: 1.8rem;
+}
+.card-descricao{
+    text-align: justify;
+    padding: 5px;
 }
 
 .card-grid .card:hover {
     transform: scale(1.15); /* Zoom de 15% */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.card-preco{
+    margin: 5px;
+    padding: 0;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
 }

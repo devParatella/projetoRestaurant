@@ -1,40 +1,41 @@
-import first from '../Images/suco1.png';
-import second from '../Images/prato1.jpg';
-import third from '../Images/prato1.jpg';
+import first from '../assets/Images/entrega1.jpg';
+import second from '../assets/Images/entrega2.jpg';
+import third from '../assets/Images/entrega3.jpg';
+import forth from '../assets/Images/entrega4.jpg';
 import Cards from "./Cards";
 import './services.css';
 
 const cardssData2 = [
     {
         imagem: first,
-        titulo: 'Prato do cards1',
-        descricao: 'Descrição do prato cards1',
-        preco: 'R$15,00'
+        titulo: 'Receba quentim',
+        descricao: 'No confor da sua cas',
+        preco: 'Pedinum tantão a entregé gratis '
     },
     {
         imagem: second,
-        titulo: 'Prato do cards2',
-        descricao: 'Descrição do prato cards2',
-        preco: 'R$15,00'
+        titulo: 'Rápidim',
+        descricao: 'Fique tranquilim',
+        preco: 'Se pedir poquim é baratim'
     },
     {
         imagem: third,
-        titulo: 'Prato do cards3',
-        descricao: 'Descrição do prato cards3',
-        preco: 'R$15,00'
+        titulo: 'Minerim delivery',
+        descricao: 'Minerim entrega na ',
+        preco: 'velocidade que a fome pede'
     },
     {
-        imagem: third,
-        titulo: 'Prato do cards3',
-        descricao: 'Descrição do prato cards3',
-        preco: 'R$15,00'
+        imagem: forth,
+        titulo: 'Experimente ',
+        descricao: 'Na entrega ou em nosso ',
+        preco: 'estabelacimento'
     }
 ] 
 export default function Services() {
     return (
         <div id="services"><br />
-            <h1>Delivery</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus quibusdam, dolores reiciendis ut aliquam dolorum, officiis, mollitia expedita similique harum! Reiciendis culpa ipsum laborum numquam, vel minus ratione nulla?</p>
+            <h1>ENTREGAS</h1>
+            <p>Experimente a conveniência de receber a nossa deliciosa comida no conforto da sua casa! Com o nosso serviço de entregas, garantimos que cada prato chegue até você fresco e saboroso. Faça seu pedido agora e descubra como transformamos cada refeição em uma experiência especial, onde quer que você esteja.</p>
             <div className="cards-container">
                 {cardssData2.map((cards, index) => (
                     <Cards

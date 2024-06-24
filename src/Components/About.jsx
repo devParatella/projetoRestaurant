@@ -4,11 +4,12 @@ export default function About() {
         <div id="about">
             <div id="aboutImg"></div>
             <div id="aboutText">
-                <h4 id="aboutHeading">NOSSA HISTORIA</h4><br />
+                <h4 id="aboutHeading">NOSSA HISTORIA E ORIGENS</h4><br />
                 <h1>Sua principal referencia em refeição</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus eius laudantium. Dignissimos odit sit doloremque maiores itaque quibusdam natus vitae neque. Vel laudantium, ipsum nulla adipisci molestias ad ipsa.</p>
                 <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magnam assumenda ex repellendus doloremque ad vero perspiciatis ipsam officiis ea, quasi facere rem ipsa. Ut harum dicta amet iure repellat.</p>
+                <p>Em uma pequena cidade de Minas Gerais, Dona Neusa transformou sua paixão pela culinária em um restaurante, inaugurado em 1995. Começando com poucas mesas, ela conquistou os moradores com pratos como feijão tropeiro e pão de queijo. A fama se espalhou, atraindo turistas. O restaurante cresceu, mas manteve seu charme e autenticidade, tornando-se um ponto de encontro para celebrar a culinária e tradições mineiras.</p>
+                <br />
+                
             </div>
         </div>
     )
